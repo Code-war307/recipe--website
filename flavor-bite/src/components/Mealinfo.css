@@ -1,0 +1,136 @@
+
+.meal-info {
+  min-height: calc(100vh - 60vh);
+  width: 100vw;
+  max-width: 95vw;
+  padding: 1.5em;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.meal-info .heading {
+  width: 100vw;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1em;
+}
+
+
+.img-desc {
+  min-height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40% 55%;
+  gap: 2em;
+  justify-content: space-evenly;
+}
+
+.img-desc .image-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1em;
+}
+
+.image-name .image {
+  width: 100%;
+  height: 60vh;
+}
+
+.image-name .image img {
+  width: 100%;
+  max-height: 60vh;
+  object-fit: contain;
+}
+
+.image-name .name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #555;
+}
+
+
+.img-desc .desc {
+  background-color: #fff;
+  height: 70vh;
+  padding: 1.5em;
+  border-radius: 8px;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.05);
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.6;
+  color: #444;
+  max-height: 300px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.ingredients {
+  margin-top: 2em;
+  padding: 2em;
+}
+
+
+.ingredients ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.ingredients ul li {
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  list-style-type: none;
+  counter-increment: list-counter;
+}
+
+.ingredients ul li::before {
+  content: counter(list-counter) ". ";
+  font-weight: bold;
+  color: #333;
+}
+
+
+.ingredients ul li h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 0.5em;
+}
+
+
+@media (max-width: 480px) {
+  .meal-info {
+    padding: 1em;
+  }
+
+  .meal-info .heading {
+    font-size: 1.5rem;
+  }
+
+  .img-desc .desc {
+    font-size: 0.9rem;
+    padding: 1em;
+  }
+
+  .ingredients h2 {
+    font-size: 1.2rem;
+  }
+
+  .ingredients ul li {
+    font-size: 0.9rem;
+    padding: 0.6em 1em;
+  }
+}

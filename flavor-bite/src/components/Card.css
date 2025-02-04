@@ -1,0 +1,136 @@
+.card {
+  height: 40vh;
+  min-width: 23vw;
+  border: 0.1rem solid #e0e0e0;
+  border-radius: 1rem;
+  box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0.8rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.card-cnt {
+  height: 50%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.2em;
+}
+
+.card-cnt .title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.navlink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navlink:hover {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.button {
+    height: clamp(30px, 4vh, 50px);
+    width: clamp(30px, 4vh, 50px);
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    border: none;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.button i{
+    height: clamp(30px, 4vh, 50px);
+    width: clamp(30px, 4vh, 50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.custom-toast {
+  background-color: green;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 768px){
+  .card{
+    min-width: 45vw;
+  }
+
+  .card-cnt .title {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 940px){
+  .card{
+    min-width: 35vw;
+  }
+
+  .card-cnt .title {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 550px){
+  .card{
+    min-width: 65vw;
+  }
+
+  .card-cnt .title {
+    font-size: 1.17rem;
+  }
+}
+
+
+@media only screen and (max-width: 400px){
+  .card{
+    min-width: 85vw;
+  }
+
+  .card-cnt .title {
+    font-size: 1.1rem;
+  }
+}
+

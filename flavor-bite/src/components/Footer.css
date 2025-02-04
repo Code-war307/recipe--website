@@ -1,0 +1,182 @@
+.footer {
+  max-height: 60vh;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: rgb(248, 248, 248);
+  color: rgb(43, 41, 41);
+  position: relative;
+  margin-top: auto;
+}
+
+.footer .upper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer .recipe-cln h3 {
+  font-size: 1.5rem;
+  color: rgb(43, 41, 41);
+}
+
+.footer .recipe-cln ul {
+  display: inline;
+  list-style-type: none;
+}
+
+.footer .recipe-cln ul li a {
+  text-decoration: none;
+  color: rgb(43, 41, 41);
+}
+
+.footer .recipe-cln ul li a:hover {
+  color: rgb(241, 191, 96);
+}
+
+.help-contact .contact-box {
+  min-height: 30vh;
+  min-width: 70vw;
+  background-color: rgb(241, 191, 96);
+  padding: 10px;
+  border-radius: 15px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 1em;
+}
+
+.help-contact .contact-box .upp-box {
+  text-align: center;
+}
+
+.help-contact .contact-box .upp-box h3 {
+  font-size: 1.8rem;
+}
+
+.help-contact .contact-box .upp-box p {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.help-contact .contact-box .low-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.help-contact .contact-box .low-box input {
+  height: 6.3vh;
+  min-width: 30vw;
+  padding: 10px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  font-weight: bolder;
+}
+
+.help-contact .contact-box .low-box button {
+  height: 6.3vh;
+  padding: 10px 20px;
+  color: white;
+  background-color: rgb(43, 41, 41);
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.footer .lower {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 4em;
+  padding: 15px;
+}
+
+.footer .lower h1 {
+  font-size: 2.3rem;
+}
+
+.footer .lower .rights {
+  color: rgb(43, 41, 41);
+  font-size: 0.97rem;
+  font-weight: bold;
+  position: relative;
+  bottom: -25px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .help-contact .contact-box .low-box input {
+    height: 5.5vh;
+    max-width: 28vw;
+  }
+
+  .help-contact .contact-box .low-box button {
+    height: 5.5vh;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .help-contact .contact-box .low-box input {
+    height: 5vh;
+    min-width: 25vw;
+  }
+
+  .help-contact .contact-box .low-box button {
+    height: 5vh;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .footer .recipe-cln {
+    display: none;
+  }
+
+  .help-contact .contact-box {
+    min-width: 90vw;
+  }
+
+  .help-contact .contact-box .low-box input {
+    height: 5vh;
+    min-width: 35vw;
+  }
+
+}
+
+@media only screen and (max-width: 550px) {
+  .help-contact .contact-box .low-box {
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+  .help-contact .contact-box .low-box input {
+    height: 5vh;
+    min-width: 40vw;
+  }
+
+  .footer .lower h1 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .footer .lower {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .footer .lower h1 {
+    font-size: 2rem;
+  }
+
+  .footer .lower .rights{
+    display: flex;
+  }
+
+  .help-contact .contact-box .low-box input {
+    height: 5vh;
+    min-width: 60vw;
+  }
+
+
+}

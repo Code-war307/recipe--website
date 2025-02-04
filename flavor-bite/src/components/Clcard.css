@@ -1,0 +1,24 @@
+.cont .img-text{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.cont .img-text img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.cont .img-text h2{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    color: black;
+    font-size: 2rem;
+}
+
+.cont .img-text img:hover{
+    opacity: 0.85;
+}
